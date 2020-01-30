@@ -72,4 +72,17 @@ public class MyDoublyLinkedList {
         return response;
     }
 
+    public  void printList(){
+        System.out.println("printing list");
+        Node temp = head;
+        while(temp != null){
+            System.out.print(temp.getData());
+            temp = temp.getNext();
+            if(temp != null){
+                System.out.print("<--->");
+            }
+        }
+        System.out.println();
+    }
+
 }
