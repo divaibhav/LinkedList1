@@ -61,10 +61,13 @@ public class MyDoublyLinkedList {
                 temp = temp.getNext();
             }
             if(temp.getPrevious() != null){
+                response = temp;
                 temp = temp.getPrevious();
                 temp.setNext(null);
+
             }
             else{
+                response = head;
                 head = null;
             }
         }
