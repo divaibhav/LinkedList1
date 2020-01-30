@@ -53,4 +53,23 @@ public class MyDoublyLinkedList {
         return response;
     }
 
+    public Node deleteFromLast(){
+        Node response = null;
+        if(head != null){
+            Node temp = head;
+            while(temp.getNext() != null){
+                temp = temp.getNext();
+            }
+            if(temp.getPrevious() != null){
+                temp = temp.getPrevious();
+                temp.setNext(null);
+            }
+            else{
+                head = null;
+            }
+        }
+
+        return response;
+    }
+
 }
