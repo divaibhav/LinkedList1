@@ -27,5 +27,19 @@ public class MyDoublyLinkedList {
             head = node;
         }
     }
+    public void insertAtLast(int data){
+        Node node = new Node(data);
+        if(head == null){
+            head = node;
+        }
+        else{
+            Node temp = head;
+            while(temp.getNext() != null){
+                temp = temp.getNext();
+            }
+            node.setPrevious(temp);
+            temp.setNext(node);
+        }
+    }
 
 }
