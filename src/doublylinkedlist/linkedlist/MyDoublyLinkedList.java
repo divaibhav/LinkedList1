@@ -42,4 +42,15 @@ public class MyDoublyLinkedList {
         }
     }
 
+    public Node deleteFromBeginning(){
+        Node response = null;
+        if(head != null){
+            response = head;
+            head = head.getNext();
+            head.setPrevious(null);
+        }
+
+        return response;
+    }
+
 }
