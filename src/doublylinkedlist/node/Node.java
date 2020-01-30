@@ -7,16 +7,20 @@
 package doublylinkedlist.node;
 
 public class Node {
+    // to store data
     private int data;
+    // to keep reference of next node
     private Node next;
+    // to keep reference of previous node
     private Node previous;
 
+    // constructor to initialize linked list at beginning head is null
     public Node(int data){
         this.data = data;
         next = null;
         previous = null;
     }
-
+    //getter and setter for field
     public int getData() {
         return data;
     }
