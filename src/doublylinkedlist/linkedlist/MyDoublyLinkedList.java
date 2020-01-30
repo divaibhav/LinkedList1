@@ -9,7 +9,9 @@ package doublylinkedlist.linkedlist;
 import doublylinkedlist.node.Node;
 
 public class MyDoublyLinkedList {
+
     private Node head;
+
 
     public MyDoublyLinkedList() {
         head = null;

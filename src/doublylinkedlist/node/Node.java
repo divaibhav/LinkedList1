@@ -14,7 +14,7 @@ public class Node {
     // to keep reference of previous node
     private Node previous;
 
-    // constructor to initialize linked list at beginning head is null
+    // constructor to initialize data, next and previous
     public Node(int data){
         this.data = data;
         next = null;
